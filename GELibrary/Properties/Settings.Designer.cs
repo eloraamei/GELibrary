@@ -33,5 +33,16 @@ namespace GELibrary.Properties {
                 return ((string)(this["GELibraryConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-8G19OCTK\\SQLEXPRESS01;Initial Catalog=GELibrary;Integrated Sec" +
+            "urity=True")]
+        public string GELibraryConnectionString1 {
+            get {
+                return ((string)(this["GELibraryConnectionString1"]));
+            }
+        }
     }
 }
