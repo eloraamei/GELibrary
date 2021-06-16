@@ -16,7 +16,7 @@ namespace GELibrary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PageAdmin1());
+            Application.Run(new PageLogin());
         }
     }
 }
