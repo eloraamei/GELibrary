@@ -32,21 +32,21 @@
             this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.txtNama = new GELibrary.CharTextBox();
             this.rbPerempuan = new System.Windows.Forms.RadioButton();
             this.rbLaki = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbStatus = new System.Windows.Forms.ComboBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.btnTambah = new FontAwesome.Sharp.IconButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
             this.txtTelp = new GELibrary.numericTextbox();
+            this.txtNama = new GELibrary.CharTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panelAdd.SuspendLayout();
             this.SuspendLayout();
@@ -94,18 +94,6 @@
             this.panelAdd.Size = new System.Drawing.Size(393, 62);
             this.panelAdd.TabIndex = 9;
             this.panelAdd.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelAdd_MouseDown);
-            // 
-            // txtNama
-            // 
-            this.txtNama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txtNama.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNama.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNama.Location = new System.Drawing.Point(57, 157);
-            this.txtNama.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNama.Multiline = true;
-            this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(280, 28);
-            this.txtNama.TabIndex = 63;
             // 
             // rbPerempuan
             // 
@@ -178,19 +166,6 @@
             this.txtID.Size = new System.Drawing.Size(280, 26);
             this.txtID.TabIndex = 51;
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(54, 359);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 18);
-            this.label7.TabIndex = 60;
-            this.label7.Text = "Status";
-            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -229,22 +204,6 @@
             this.label2.Size = new System.Drawing.Size(90, 18);
             this.label2.TabIndex = 55;
             this.label2.Text = "ID Member";
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.cbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbStatus.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cbStatus.FormattingEnabled = true;
-            this.cbStatus.Items.AddRange(new object[] {
-            "Tersedia",
-            "Sedang Meminjam"});
-            this.cbStatus.Location = new System.Drawing.Point(57, 381);
-            this.cbStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(280, 21);
-            this.cbStatus.TabIndex = 54;
             // 
             // txtAlamat
             // 
@@ -307,6 +266,35 @@
             this.btnTambah.UseVisualStyleBackColor = false;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(53, 360);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 18);
+            this.label7.TabIndex = 77;
+            this.label7.Text = "Status";
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.cbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbStatus.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Items.AddRange(new object[] {
+            "Belum_Meminjam",
+            "Sedang_Meminjam"});
+            this.cbStatus.Location = new System.Drawing.Point(57, 382);
+            this.cbStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(280, 21);
+            this.cbStatus.TabIndex = 76;
+            // 
             // txtTelp
             // 
             this.txtTelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -320,12 +308,26 @@
             this.txtTelp.TabIndex = 64;
             this.txtTelp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelp_KeyPress);
             // 
+            // txtNama
+            // 
+            this.txtNama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtNama.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNama.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtNama.Location = new System.Drawing.Point(57, 157);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNama.Multiline = true;
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(280, 28);
+            this.txtNama.TabIndex = 63;
+            // 
             // AddMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(390, 462);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.txtTelp);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.rbPerempuan);
@@ -333,11 +335,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnTambah);
@@ -366,14 +366,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbStatus;
         private System.Windows.Forms.TextBox txtAlamat;
         private FontAwesome.Sharp.IconButton btnClear;
         private FontAwesome.Sharp.IconButton btnTambah;
         private numericTextbox txtTelp;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ComboBox cbStatus;
     }
 }

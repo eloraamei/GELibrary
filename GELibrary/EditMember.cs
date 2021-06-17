@@ -117,10 +117,7 @@ namespace GELibrary
 
         private void txtTelp_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar)) || (txtTelp.Text.Length >= 13 && !char.IsControl(e.KeyChar)))
-            {
-                e.Handled = true;
-            }
+            txtTelp.MaxLength = 13;
         }
     }
 }

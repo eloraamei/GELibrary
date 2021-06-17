@@ -182,8 +182,8 @@
             this.cbStatus.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
-            "Tersedia",
-            "Sedang Meminjam"});
+            "Belum_Meminjam",
+            "Sedang_Meminjam"});
             this.cbStatus.Location = new System.Drawing.Point(57, 378);
             this.cbStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cbStatus.Name = "cbStatus";
@@ -251,9 +251,9 @@
             this.label1.Location = new System.Drawing.Point(125, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 19);
+            this.label1.Size = new System.Drawing.Size(138, 19);
             this.label1.TabIndex = 80;
-            this.label1.Text = "        Edit Pegawai";
+            this.label1.Text = "        Edit Member";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnClose

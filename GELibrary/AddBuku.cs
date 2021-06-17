@@ -103,7 +103,7 @@ namespace GELibrary
                     com.Parameters.AddWithValue("@Judul", txtJudul.Text);
                     com.Parameters.AddWithValue("@ID_Kategori", cbKategori.SelectedValue);
                     com.Parameters.AddWithValue("@Pengarang", txtPengarang.Text);
-                    com.Parameters.AddWithValue("@ID_Penerbit", cbPenerbit.Text);
+                    com.Parameters.AddWithValue("@ID_Penerbit", cbPenerbit.SelectedValue);
                     com.Parameters.AddWithValue("@TahunTerbit", txtTahunTerbit.Text);
                     com.Parameters.AddWithValue("@ID_Lokasi", cbLokasi.SelectedValue);
                     com.Parameters.AddWithValue("@Harga", txtharga.Text);

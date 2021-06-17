@@ -19,7 +19,6 @@ namespace GELibrary
         public AddMember()
         {
             InitializeComponent();
-            cbStatus.SelectedIndex = -1;
             string query = "SELECT TOP 1 ID FROM Member ORDER BY ID DESC";
             txtID.Text = autogenerateID("MB", query);
             txtID.Enabled = false;
@@ -103,6 +102,7 @@ namespace GELibrary
                     com.Parameters.AddWithValue("@Status", cbStatus.SelectedValue);
 
                     connection.Open();
+
                     int result = Convert.ToInt32(com.ExecuteNonQuery());
                     connection.Close();
 
@@ -147,7 +147,6 @@ namespace GELibrary
             rbPerempuan.Checked = false;
             txtAlamat.Clear();
             txtTelp.Clear();
-            cbStatus.SelectedIndex = -1;
 
             string query = "SELECT TOP 1 ID FROM Member ORDER BY ID DESC";
             txtID.Text = autogenerateID("MB", query);
@@ -161,10 +160,7 @@ namespace GELibrary
 
         private void txtTelp_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar)) || (txtTelp.Text.Length >= 13 && !char.IsControl(e.KeyChar)))
-            {
-                e.Handled = true;
-            }
+            txtTelp.MaxLength = 13;
         }
     }
 }

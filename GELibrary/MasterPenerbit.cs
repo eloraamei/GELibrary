@@ -40,8 +40,10 @@ namespace GELibrary
 
         private void MasterPenerbit_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gELibraryDataSet1.Penerbit_Buku' table. You can move, or remove it, as needed.
+            this.penerbit_BukuTableAdapter1.Fill(this.gELibraryDataSet1.Penerbit_Buku);
             // TODO: This line of code loads data into the 'gELibraryDataSet.Penerbit_Buku' table. You can move, or remove it, as needed.
-            this.penerbit_BukuTableAdapter.Fill(this.gELibraryDataSet.Penerbit_Buku);
+            //this.penerbit_BukuTableAdapter.Fill(this.gELibraryDataSet.Penerbit_Buku);
 
         }
 

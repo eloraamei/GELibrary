@@ -147,8 +147,10 @@ namespace GELibrary
 
         private void MasterKategori_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gELibraryDataSet1.Kategori_Buku' table. You can move, or remove it, as needed.
+            this.kategori_BukuTableAdapter1.Fill(this.gELibraryDataSet1.Kategori_Buku);
             // TODO: This line of code loads data into the 'gELibraryDataSet.Kategori_Buku' table. You can move, or remove it, as needed.
-            this.kategori_BukuTableAdapter.Fill(this.gELibraryDataSet.Kategori_Buku);
+            //this.kategori_BukuTableAdapter.Fill(this.gELibraryDataSet.Kategori_Buku);
 
         }
     }

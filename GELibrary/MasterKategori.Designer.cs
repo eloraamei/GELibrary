@@ -41,18 +41,23 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.txtCari = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.kategoriBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gELibraryDataSet = new GELibrary.GELibraryDataSet();
-            this.kategori_BukuTableAdapter = new GELibrary.GELibraryDataSetTableAdapters.Kategori_BukuTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnHapus = new System.Windows.Forms.DataGridViewImageColumn();
+            this.kategoriBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gELibraryDataSet = new GELibrary.GELibraryDataSet();
+            this.kategori_BukuTableAdapter = new GELibrary.GELibraryDataSetTableAdapters.Kategori_BukuTableAdapter();
+            this.gELibraryDataSet1 = new GELibrary.GELibraryDataSet1();
+            this.kategoriBukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kategori_BukuTableAdapter1 = new GELibrary.GELibraryDataSet1TableAdapters.Kategori_BukuTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategoriBukuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategoriBukuBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,9 +66,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(41, 30);
+            this.label1.Location = new System.Drawing.Point(27, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(381, 43);
+            this.label1.Size = new System.Drawing.Size(253, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Kelola Data Kategori";
             // 
@@ -80,9 +86,10 @@
             this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRefresh.IconSize = 30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(201, 15);
+            this.btnRefresh.Location = new System.Drawing.Point(134, 10);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(137, 34);
+            this.btnRefresh.Size = new System.Drawing.Size(91, 22);
             this.btnRefresh.TabIndex = 4;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,9 +110,10 @@
             this.btnTambah.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTambah.IconSize = 30;
             this.btnTambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTambah.Location = new System.Drawing.Point(34, 15);
+            this.btnTambah.Location = new System.Drawing.Point(23, 10);
+            this.btnTambah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(137, 34);
+            this.btnTambah.Size = new System.Drawing.Size(91, 22);
             this.btnTambah.TabIndex = 1;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,9 +130,10 @@
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnTambah);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(49, 89);
+            this.panel1.Location = new System.Drawing.Point(33, 58);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1333, 764);
+            this.panel1.Size = new System.Drawing.Size(889, 497);
             this.panel1.TabIndex = 5;
             // 
             // iconPictureBox1
@@ -133,9 +142,11 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1265, 15);
+            this.iconPictureBox1.IconSize = 21;
+            this.iconPictureBox1.Location = new System.Drawing.Point(843, 10);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.Size = new System.Drawing.Size(21, 21);
             this.iconPictureBox1.TabIndex = 8;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -146,10 +157,11 @@
             this.txtCari.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCari.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCari.ForeColor = System.Drawing.Color.White;
-            this.txtCari.Location = new System.Drawing.Point(890, 13);
+            this.txtCari.Location = new System.Drawing.Point(593, 8);
+            this.txtCari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCari.Multiline = true;
             this.txtCari.Name = "txtCari";
-            this.txtCari.Size = new System.Drawing.Size(363, 34);
+            this.txtCari.Size = new System.Drawing.Size(242, 22);
             this.txtCari.TabIndex = 7;
             this.txtCari.TextChanged += new System.EventHandler(this.txtCari_TextChanged);
             // 
@@ -174,7 +186,7 @@
             this.namaDataGridViewTextBoxColumn,
             this.btnEdit,
             this.btnHapus});
-            this.dataGridView1.DataSource = this.kategoriBukuBindingSource;
+            this.dataGridView1.DataSource = this.kategoriBukuBindingSource1;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.LavenderBlush;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,27 +195,14 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 70);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 45);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1263, 640);
+            this.dataGridView1.Size = new System.Drawing.Size(842, 416);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // kategoriBukuBindingSource
-            // 
-            this.kategoriBukuBindingSource.DataMember = "Kategori_Buku";
-            this.kategoriBukuBindingSource.DataSource = this.gELibraryDataSet;
-            // 
-            // gELibraryDataSet
-            // 
-            this.gELibraryDataSet.DataSetName = "GELibraryDataSet";
-            this.gELibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kategori_BukuTableAdapter
-            // 
-            this.kategori_BukuTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -250,14 +249,43 @@
             this.btnHapus.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.btnHapus.Name = "btnHapus";
             // 
+            // kategoriBukuBindingSource
+            // 
+            this.kategoriBukuBindingSource.DataMember = "Kategori_Buku";
+            this.kategoriBukuBindingSource.DataSource = this.gELibraryDataSet;
+            // 
+            // gELibraryDataSet
+            // 
+            this.gELibraryDataSet.DataSetName = "GELibraryDataSet";
+            this.gELibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kategori_BukuTableAdapter
+            // 
+            this.kategori_BukuTableAdapter.ClearBeforeFill = true;
+            // 
+            // gELibraryDataSet1
+            // 
+            this.gELibraryDataSet1.DataSetName = "GELibraryDataSet1";
+            this.gELibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kategoriBukuBindingSource1
+            // 
+            this.kategoriBukuBindingSource1.DataMember = "Kategori_Buku";
+            this.kategoriBukuBindingSource1.DataSource = this.gELibraryDataSet1;
+            // 
+            // kategori_BukuTableAdapter1
+            // 
+            this.kategori_BukuTableAdapter1.ClearBeforeFill = true;
+            // 
             // MasterKategori
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1423, 895);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MasterKategori";
             this.Text = "Data Kategori";
             this.Load += new System.EventHandler(this.MasterKategori_Load);
@@ -267,6 +295,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategoriBukuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategoriBukuBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +318,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn namaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn btnEdit;
         private System.Windows.Forms.DataGridViewImageColumn btnHapus;
+        private GELibraryDataSet1 gELibraryDataSet1;
+        private System.Windows.Forms.BindingSource kategoriBukuBindingSource1;
+        private GELibraryDataSet1TableAdapters.Kategori_BukuTableAdapter kategori_BukuTableAdapter1;
     }
 }

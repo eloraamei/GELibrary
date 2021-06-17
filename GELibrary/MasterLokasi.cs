@@ -104,8 +104,10 @@ namespace GELibrary
 
         private void MasterLokasi_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gELibraryDataSet1.Lokasi_Buku' table. You can move, or remove it, as needed.
+            this.lokasi_BukuTableAdapter1.Fill(this.gELibraryDataSet1.Lokasi_Buku);
             // TODO: This line of code loads data into the 'gELibraryDataSet.Lokasi_Buku' table. You can move, or remove it, as needed.
-            this.lokasi_BukuTableAdapter.Fill(this.gELibraryDataSet.Lokasi_Buku);
+            //this.lokasi_BukuTableAdapter.Fill(this.gELibraryDataSet.Lokasi_Buku);
 
         }
 

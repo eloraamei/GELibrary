@@ -52,6 +52,14 @@ namespace GELibrary
                 editMember.jenisKelamin = _jeniskelamin;
                 editMember.txtAlamat.Text = _alamat;
                 editMember.txtTelp.Text = _notelp;
+                if(_status.Equals("Belum Meminjam"))
+                {
+                    editMember.cbStatus.SelectedIndex = 0;
+                }
+                else if (_status.Equals("Sedang Meminjam"))
+                {
+                    editMember.cbStatus.SelectedIndex = 1;
+                }
                 editMember.cbStatus.SelectedValue = _status;
 
                 editMember.Show();
@@ -83,6 +91,8 @@ namespace GELibrary
 
         private void MasterMember_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'gELibraryDataSet1.Member' table. You can move, or remove it, as needed.
+            this.memberTableAdapter.Fill(this.gELibraryDataSet1.Member);
             // TODO: This line of code loads data into the 'gELibraryDataSet1.Member' table. You can move, or remove it, as needed.
             this.memberTableAdapter.Fill(this.gELibraryDataSet1.Member);
 

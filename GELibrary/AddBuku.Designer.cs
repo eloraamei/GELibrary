@@ -33,20 +33,23 @@
             this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.txtPengarang = new GELibrary.CharTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtJudul = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbKategori = new System.Windows.Forms.ComboBox();
+            this.kategoriBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gELibraryDataSet1 = new GELibrary.GELibraryDataSet1();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbPenerbit = new System.Windows.Forms.ComboBox();
+            this.penerbitBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.txtTahunTerbit = new GELibrary.numericTextbox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbLokasi = new System.Windows.Forms.ComboBox();
+            this.lokasiBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtharga = new GELibrary.numericTextbox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtJumlah = new GELibrary.numericTextbox();
@@ -54,17 +57,14 @@
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.btnTambah = new FontAwesome.Sharp.IconButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.gELibraryDataSet1 = new GELibrary.GELibraryDataSet1();
-            this.kategoriBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kategori_BukuTableAdapter = new GELibrary.GELibraryDataSet1TableAdapters.Kategori_BukuTableAdapter();
-            this.penerbitBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.penerbit_BukuTableAdapter = new GELibrary.GELibraryDataSet1TableAdapters.Penerbit_BukuTableAdapter();
-            this.lokasiBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lokasi_BukuTableAdapter = new GELibrary.GELibraryDataSet1TableAdapters.Lokasi_BukuTableAdapter();
+            this.txtPengarang = new GELibrary.CharTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panelAdd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategoriBukuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penerbitBukuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lokasiBukuBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +78,7 @@
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 19;
             this.btnClose.Location = new System.Drawing.Point(711, 13);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 19);
             this.btnClose.TabIndex = 2;
@@ -108,24 +108,12 @@
             this.panelAdd.Controls.Add(this.btnClose);
             this.panelAdd.Controls.Add(this.label1);
             this.panelAdd.Location = new System.Drawing.Point(-1, -5);
-            this.panelAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelAdd.Margin = new System.Windows.Forms.Padding(2);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(741, 79);
             this.panelAdd.TabIndex = 9;
             this.panelAdd.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdd_Paint);
             this.panelAdd.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelAdd_MouseDown);
-            // 
-            // txtPengarang
-            // 
-            this.txtPengarang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txtPengarang.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPengarang.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtPengarang.Location = new System.Drawing.Point(57, 294);
-            this.txtPengarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtPengarang.Multiline = true;
-            this.txtPengarang.Name = "txtPengarang";
-            this.txtPengarang.Size = new System.Drawing.Size(280, 28);
-            this.txtPengarang.TabIndex = 52;
             // 
             // label3
             // 
@@ -147,7 +135,7 @@
             this.txtID.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtID.Location = new System.Drawing.Point(57, 123);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(280, 26);
@@ -173,7 +161,7 @@
             this.txtJudul.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJudul.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtJudul.Location = new System.Drawing.Point(57, 180);
-            this.txtJudul.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtJudul.Margin = new System.Windows.Forms.Padding(2);
             this.txtJudul.Multiline = true;
             this.txtJudul.Name = "txtJudul";
             this.txtJudul.Size = new System.Drawing.Size(280, 26);
@@ -202,11 +190,21 @@
             this.cbKategori.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbKategori.FormattingEnabled = true;
             this.cbKategori.Location = new System.Drawing.Point(57, 240);
-            this.cbKategori.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbKategori.Margin = new System.Windows.Forms.Padding(2);
             this.cbKategori.Name = "cbKategori";
             this.cbKategori.Size = new System.Drawing.Size(280, 21);
             this.cbKategori.TabIndex = 54;
             this.cbKategori.ValueMember = "ID";
+            // 
+            // kategoriBukuBindingSource
+            // 
+            this.kategoriBukuBindingSource.DataMember = "Kategori_Buku";
+            this.kategoriBukuBindingSource.DataSource = this.gELibraryDataSet1;
+            // 
+            // gELibraryDataSet1
+            // 
+            this.gELibraryDataSet1.DataSetName = "GELibraryDataSet1";
+            this.gELibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label4
             // 
@@ -244,11 +242,16 @@
             this.cbPenerbit.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbPenerbit.FormattingEnabled = true;
             this.cbPenerbit.Location = new System.Drawing.Point(57, 350);
-            this.cbPenerbit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPenerbit.Margin = new System.Windows.Forms.Padding(2);
             this.cbPenerbit.Name = "cbPenerbit";
             this.cbPenerbit.Size = new System.Drawing.Size(280, 21);
             this.cbPenerbit.TabIndex = 57;
             this.cbPenerbit.ValueMember = "ID";
+            // 
+            // penerbitBukuBindingSource
+            // 
+            this.penerbitBukuBindingSource.DataMember = "Penerbit_Buku";
+            this.penerbitBukuBindingSource.DataSource = this.gELibraryDataSet1;
             // 
             // label6
             // 
@@ -269,7 +272,7 @@
             this.txtTahunTerbit.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTahunTerbit.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtTahunTerbit.Location = new System.Drawing.Point(399, 123);
-            this.txtTahunTerbit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTahunTerbit.Margin = new System.Windows.Forms.Padding(2);
             this.txtTahunTerbit.Multiline = true;
             this.txtTahunTerbit.Name = "txtTahunTerbit";
             this.txtTahunTerbit.Size = new System.Drawing.Size(280, 26);
@@ -298,11 +301,16 @@
             this.cbLokasi.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbLokasi.FormattingEnabled = true;
             this.cbLokasi.Location = new System.Drawing.Point(399, 187);
-            this.cbLokasi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbLokasi.Margin = new System.Windows.Forms.Padding(2);
             this.cbLokasi.Name = "cbLokasi";
             this.cbLokasi.Size = new System.Drawing.Size(280, 21);
             this.cbLokasi.TabIndex = 61;
             this.cbLokasi.ValueMember = "ID";
+            // 
+            // lokasiBukuBindingSource
+            // 
+            this.lokasiBukuBindingSource.DataMember = "Lokasi_Buku";
+            this.lokasiBukuBindingSource.DataSource = this.gELibraryDataSet1;
             // 
             // txtharga
             // 
@@ -310,7 +318,7 @@
             this.txtharga.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtharga.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtharga.Location = new System.Drawing.Point(431, 240);
-            this.txtharga.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtharga.Margin = new System.Windows.Forms.Padding(2);
             this.txtharga.Multiline = true;
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(249, 26);
@@ -336,7 +344,7 @@
             this.txtJumlah.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJumlah.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtJumlah.Location = new System.Drawing.Point(399, 296);
-            this.txtJumlah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtJumlah.Margin = new System.Windows.Forms.Padding(2);
             this.txtJumlah.Multiline = true;
             this.txtJumlah.Name = "txtJumlah";
             this.txtJumlah.Size = new System.Drawing.Size(280, 28);
@@ -369,7 +377,7 @@
             this.btnClear.IconSize = 30;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.Location = new System.Drawing.Point(399, 413);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(91, 22);
             this.btnClear.TabIndex = 68;
@@ -393,7 +401,7 @@
             this.btnTambah.IconSize = 30;
             this.btnTambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTambah.Location = new System.Drawing.Point(266, 413);
-            this.btnTambah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTambah.Margin = new System.Windows.Forms.Padding(2);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(91, 22);
             this.btnTambah.TabIndex = 67;
@@ -416,37 +424,29 @@
             this.label11.TabIndex = 92;
             this.label11.Text = "Rp.";
             // 
-            // gELibraryDataSet1
-            // 
-            this.gELibraryDataSet1.DataSetName = "GELibraryDataSet1";
-            this.gELibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kategoriBukuBindingSource
-            // 
-            this.kategoriBukuBindingSource.DataMember = "Kategori_Buku";
-            this.kategoriBukuBindingSource.DataSource = this.gELibraryDataSet1;
-            // 
             // kategori_BukuTableAdapter
             // 
             this.kategori_BukuTableAdapter.ClearBeforeFill = true;
-            // 
-            // penerbitBukuBindingSource
-            // 
-            this.penerbitBukuBindingSource.DataMember = "Penerbit_Buku";
-            this.penerbitBukuBindingSource.DataSource = this.gELibraryDataSet1;
             // 
             // penerbit_BukuTableAdapter
             // 
             this.penerbit_BukuTableAdapter.ClearBeforeFill = true;
             // 
-            // lokasiBukuBindingSource
-            // 
-            this.lokasiBukuBindingSource.DataMember = "Lokasi_Buku";
-            this.lokasiBukuBindingSource.DataSource = this.gELibraryDataSet1;
-            // 
             // lokasi_BukuTableAdapter
             // 
             this.lokasi_BukuTableAdapter.ClearBeforeFill = true;
+            // 
+            // txtPengarang
+            // 
+            this.txtPengarang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txtPengarang.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPengarang.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPengarang.Location = new System.Drawing.Point(57, 296);
+            this.txtPengarang.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPengarang.Multiline = true;
+            this.txtPengarang.Name = "txtPengarang";
+            this.txtPengarang.Size = new System.Drawing.Size(280, 28);
+            this.txtPengarang.TabIndex = 93;
             // 
             // AddBuku
             // 
@@ -454,6 +454,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(739, 454);
+            this.Controls.Add(this.txtPengarang);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnTambah);
@@ -471,13 +472,12 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbKategori);
             this.Controls.Add(this.txtJudul);
-            this.Controls.Add(this.txtPengarang);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panelAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddBuku";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddBuku";
@@ -485,8 +485,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.panelAdd.ResumeLayout(false);
             this.panelAdd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kategoriBukuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.penerbitBukuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lokasiBukuBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -499,7 +499,6 @@
         private FontAwesome.Sharp.IconPictureBox btnClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelAdd;
-        private CharTextBox txtPengarang;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label2;
@@ -527,5 +526,6 @@
         private GELibraryDataSet1TableAdapters.Penerbit_BukuTableAdapter penerbit_BukuTableAdapter;
         private System.Windows.Forms.BindingSource lokasiBukuBindingSource;
         private GELibraryDataSet1TableAdapters.Lokasi_BukuTableAdapter lokasi_BukuTableAdapter;
+        private CharTextBox txtPengarang;
     }
 }

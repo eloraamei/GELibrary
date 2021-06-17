@@ -40,19 +40,24 @@
             this.txtCari = new System.Windows.Forms.TextBox();
             this.btnTambah = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.penerbitBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gELibraryDataSet = new GELibrary.GELibraryDataSet();
-            this.label1 = new System.Windows.Forms.Label();
-            this.penerbit_BukuTableAdapter = new GELibrary.GELibraryDataSetTableAdapters.Penerbit_BukuTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnHapus = new System.Windows.Forms.DataGridViewImageColumn();
+            this.penerbitBukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gELibraryDataSet = new GELibrary.GELibraryDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.penerbit_BukuTableAdapter = new GELibrary.GELibraryDataSetTableAdapters.Penerbit_BukuTableAdapter();
+            this.gELibraryDataSet1 = new GELibrary.GELibraryDataSet1();
+            this.penerbitBukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.penerbit_BukuTableAdapter1 = new GELibrary.GELibraryDataSet1TableAdapters.Penerbit_BukuTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penerbitBukuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penerbitBukuBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,9 +69,10 @@
             this.panel1.Controls.Add(this.txtCari);
             this.panel1.Controls.Add(this.btnTambah);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(36, 100);
+            this.panel1.Location = new System.Drawing.Point(24, 65);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1347, 753);
+            this.panel1.Size = new System.Drawing.Size(898, 489);
             this.panel1.TabIndex = 5;
             // 
             // iconPictureBox1
@@ -75,9 +81,11 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1282, 18);
+            this.iconPictureBox1.IconSize = 21;
+            this.iconPictureBox1.Location = new System.Drawing.Point(855, 12);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.Size = new System.Drawing.Size(21, 21);
             this.iconPictureBox1.TabIndex = 5;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -94,9 +102,10 @@
             this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRefresh.IconSize = 30;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(211, 16);
+            this.btnRefresh.Location = new System.Drawing.Point(141, 10);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(137, 34);
+            this.btnRefresh.Size = new System.Drawing.Size(91, 22);
             this.btnRefresh.TabIndex = 4;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,10 +120,11 @@
             this.txtCari.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCari.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCari.ForeColor = System.Drawing.Color.White;
-            this.txtCari.Location = new System.Drawing.Point(902, 16);
+            this.txtCari.Location = new System.Drawing.Point(601, 10);
+            this.txtCari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCari.Multiline = true;
             this.txtCari.Name = "txtCari";
-            this.txtCari.Size = new System.Drawing.Size(363, 34);
+            this.txtCari.Size = new System.Drawing.Size(242, 22);
             this.txtCari.TabIndex = 2;
             this.txtCari.TextChanged += new System.EventHandler(this.txtCari_TextChanged);
             // 
@@ -131,9 +141,10 @@
             this.btnTambah.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTambah.IconSize = 30;
             this.btnTambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTambah.Location = new System.Drawing.Point(33, 16);
+            this.btnTambah.Location = new System.Drawing.Point(22, 10);
+            this.btnTambah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(137, 34);
+            this.btnTambah.Size = new System.Drawing.Size(91, 22);
             this.btnTambah.TabIndex = 1;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +173,7 @@
             this.namaDataGridViewTextBoxColumn,
             this.btnEdit,
             this.btnHapus});
-            this.dataGridView1.DataSource = this.penerbitBukuBindingSource;
+            this.dataGridView1.DataSource = this.penerbitBukuBindingSource1;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.LavenderBlush;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,39 +182,14 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 75);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 49);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1281, 640);
+            this.dataGridView1.Size = new System.Drawing.Size(854, 416);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // penerbitBukuBindingSource
-            // 
-            this.penerbitBukuBindingSource.DataMember = "Penerbit_Buku";
-            this.penerbitBukuBindingSource.DataSource = this.gELibraryDataSet;
-            // 
-            // gELibraryDataSet
-            // 
-            this.gELibraryDataSet.DataSetName = "GELibraryDataSet";
-            this.gELibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(28, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 43);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Kelola Data Penerbit";
-            // 
-            // penerbit_BukuTableAdapter
-            // 
-            this.penerbit_BukuTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -250,14 +236,56 @@
             this.btnHapus.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.btnHapus.Name = "btnHapus";
             // 
+            // penerbitBukuBindingSource
+            // 
+            this.penerbitBukuBindingSource.DataMember = "Penerbit_Buku";
+            this.penerbitBukuBindingSource.DataSource = this.gELibraryDataSet;
+            // 
+            // gELibraryDataSet
+            // 
+            this.gELibraryDataSet.DataSetName = "GELibraryDataSet";
+            this.gELibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(19, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(249, 28);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Kelola Data Penerbit";
+            // 
+            // penerbit_BukuTableAdapter
+            // 
+            this.penerbit_BukuTableAdapter.ClearBeforeFill = true;
+            // 
+            // gELibraryDataSet1
+            // 
+            this.gELibraryDataSet1.DataSetName = "GELibraryDataSet1";
+            this.gELibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // penerbitBukuBindingSource1
+            // 
+            this.penerbitBukuBindingSource1.DataMember = "Penerbit_Buku";
+            this.penerbitBukuBindingSource1.DataSource = this.gELibraryDataSet1;
+            // 
+            // penerbit_BukuTableAdapter1
+            // 
+            this.penerbit_BukuTableAdapter1.ClearBeforeFill = true;
+            // 
             // MasterPenerbit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1424, 895);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MasterPenerbit";
             this.Text = "Data Penerbit";
             this.Load += new System.EventHandler(this.MasterPenerbit_Load);
@@ -267,6 +295,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.penerbitBukuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gELibraryDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penerbitBukuBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +318,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn namaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn btnEdit;
         private System.Windows.Forms.DataGridViewImageColumn btnHapus;
+        private GELibraryDataSet1 gELibraryDataSet1;
+        private System.Windows.Forms.BindingSource penerbitBukuBindingSource1;
+        private GELibraryDataSet1TableAdapters.Penerbit_BukuTableAdapter penerbit_BukuTableAdapter1;
     }
 }
